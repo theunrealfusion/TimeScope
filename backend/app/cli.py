@@ -1,3 +1,4 @@
+from __future__ import annotations
 """TimeScope CLI — uses the same service layer as the REST API."""
 import click
 import asyncio

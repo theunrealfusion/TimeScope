@@ -1,3 +1,4 @@
+from __future__ import annotations
 """TimeScope FastAPI application factory."""
 from contextlib import asynccontextmanager
 from fastapi import FastAPI

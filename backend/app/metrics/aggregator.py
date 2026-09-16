@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Aggregate metrics per-horizon-step and overall."""
 import numpy as np
 from dataclasses import dataclass

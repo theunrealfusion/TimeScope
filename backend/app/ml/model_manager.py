@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Model lifecycle manager — lazy loading, caching, device management."""
 import logging
 from typing import Dict, Any

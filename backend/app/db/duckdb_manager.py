@@ -1,3 +1,4 @@
+from __future__ import annotations
 """DuckDB connection manager with Parquet integration."""
 import duckdb
 from pathlib import Path

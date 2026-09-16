@@ -1,3 +1,4 @@
+from __future__ import annotations
 """TimesFM 3.0 model provider — local inference."""
 import logging
 import numpy as np

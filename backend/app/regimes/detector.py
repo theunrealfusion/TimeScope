@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Market regime detector using transparent, deterministic rules.
 
 No opaque ML labels — all thresholds are documented and configurable.

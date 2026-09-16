@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Forecast service — orchestrates the full forecasting pipeline."""
 import hashlib
 import json

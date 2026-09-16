@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Probabilistic forecast metrics — pinball loss, coverage, calibration."""
 import numpy as np
 

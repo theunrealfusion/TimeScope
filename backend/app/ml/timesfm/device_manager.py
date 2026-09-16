@@ -1,3 +1,4 @@
+from __future__ import annotations
 """GPU/CPU device management with memory safety for 4GB VRAM."""
 import logging
 from dataclasses import dataclass

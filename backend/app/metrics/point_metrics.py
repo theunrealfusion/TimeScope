@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Point forecast metrics — MAE, RMSE, MAPE, sMAPE."""
 import numpy as np
 

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Walk-forward backtesting engine with leakage-free evaluation.
 
 Implements rolling-origin evaluation where at each step:

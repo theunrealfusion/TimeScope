@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Experiment configuration — complete reproducibility."""
 from datetime import datetime
 from pydantic import BaseModel, Field

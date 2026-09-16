@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Forecast model provider abstraction."""
 from abc import ABC, abstractmethod
 from dataclasses import dataclass

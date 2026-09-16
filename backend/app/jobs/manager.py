@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Lightweight job manager using SQLite-backed state.
 
 No Redis required. Uses in-process workers with asyncio.

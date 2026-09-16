@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Application configuration using Pydantic Settings."""
 from enum import Enum
 from functools import lru_cache

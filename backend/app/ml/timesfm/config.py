@@ -1,3 +1,4 @@
+from __future__ import annotations
 """TimesFM model configuration."""
 from pydantic import BaseModel, Field
 

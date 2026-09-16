@@ -1,3 +1,4 @@
+from __future__ import annotations
 """LeakageGuard: ensures no future information leaks into features.
 
 This is one of the most critical components. Every feature must be

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Naive (persistence) baseline forecast provider."""
 import numpy as np
 from app.ml.base import (
