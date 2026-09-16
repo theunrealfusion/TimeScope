@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  timescope-backend:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - TIMESCOPE_DEVICE_MODE=auto

@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  timescope-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TIMESCOPE_DEVICE_MODE=cpu
+      - TIMESCOPE_DATA_DIR=/app/data
+      - TIMESCOPE_DUCKDB_PATH=/app/data/timescope.duckdb
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  timescope-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - timescope-backend
+    environment:
+      - VITE_API_URL=http://localhost:8000
